@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Program 1 using Anonymous function
+        var arr=[1,2,3,3,4,5];
+        var odd=function(arr){
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]%2!=0)
+                console.log(arr[i])
+        } }
+        odd(arr);
+        
+     ( function(arr){
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]%2!=0)
+                console.log(arr[i])
+            }
+        })(arr)
+        
+    var oddnumbers=(arr)=>{
+        for(let i=0;i<arr.length;i++)
+        if(arr[i]%2!=0)
+        console.log(arr[i])
+    }
+    oddnumbers(arr);
+        
+    //program 2 
+    var name="santhosh";
+    var toupper=function(name){
+        console.log(name.toUpperCase())
+    }
+    toupper(name);
+
+    (function(name){
+        console.log(name.toUpperCase())
+    })(name)
+
+    var upper=(name)=>{
+        console.log(name.toUpperCase())
+    }
+    upper(name);
+    //program 3
+    var sum=function(arr){
+        var total=0;
+        for(var i=0;i<arr.length;i++)
+        total+=arr[i]
+        console.log(total)
+    }
+    sum(arr);
+    (   
+        function(arr){
+            total=0
+            for(let i=0;i<arr.length;i++){
+                total+=arr[i];
+            }
+            console.log(total)
+        }
+    )(arr)
+         var sumall=(arr)=>{let sum=0
+
+            for(let i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            console.log(sum);
+         }
+         sumall(arr)
+    // problem 4
+        var prime=function(arr){
+            for(let i=0;i<arr.length;i++){
+                if(isPrime(arr[i]))
+                console.log(arr[i])
+            }
+        }
+        prime(arr);
+        
+       function isPrime(checkingnumber){
+             if(checkingnumber==1||checkingnumber==2)
+                     return true;
+            else{
+                var flag=0;
+            for(let i=2;i<checkingnumber;i++){
+                if(checkingnumber%i==0)
+                 flag=1;
+            }
+            if(flag==0)
+            return true;
+        }
+            
+       }
+       (function(arr){
+        for(let i=0;i<arr.length;i++){
+            if(isPrime(arr[i]))
+            console.log(arr[i]);
+        }
+    }
+        )(arr)
+        
+        var primenumbers=(arr)=>{
+            for(let i=0;i<arr.length;i++)
+            if(isPrime(arr[i]))
+            console.log(arr[i])
+        }
+        primenumbers(arr)
+
+        //program 5
+        var temp="dad";
+        var reversedresult=function(temp){
+            if(temp.split("").reverse().join("")===temp)
+             console.log("palindrome")
+             else
+             console.log("not an palindrome")
+        }
+        reversedresult(temp)
+        temp="daady"
+         reversedresults=(temp)=>{
+            if(temp.split("").reverse().join("")===temp)
+             console.log("palindrome")
+             else
+             console.log("not an palindrome")
+        }
+        reversedresults(temp)
+
+        temp="daady";
+         (function(temp){
+            if(temp.split("").reverse().join("")===temp)
+             console.log("palindrome")
+             else
+             console.log("not an palindrome")
+        
+             } 
+    )(temp)
+
+// problem 6
+
+
+
+    </script>
+</body>
+</html>
